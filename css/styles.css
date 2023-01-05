@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Provicali", sans-serif;
+  }
+
+@font-face {
+    font-family: "Provicali";
+    src: url("/fonts/Provicali.otf") format("opentype");
+}
+
+header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-top: 1px solid rgb(99, 99, 99);
+}
+
+footer img{
+    width: 200px;
+    margin-top: 20px;
+}
+
+footer ul{
+    margin-top: 20px;
+}
+
+.copy-footer{
+    margin-top: 20px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-top: 1px solid rgb(99, 99, 99);
+}
+
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-nav li {
+  flex: 1;
+  text-align: center;
+}
+
+.bottom-nav a {
+  display: block;
+  padding: 20px 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.gradient-text {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, #ea90ff, #eaff6a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 40px;
+}
+
+.gradient-text-platform{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to right, #ea90ff, #eaff6a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 40px;
+}
+
+.explanation{
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.explanation p{
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.gradient-h2{
+    font-size: 30px;
+    text-shadow: 0 0 30px white;
+    background: linear-gradient(to right, #ea90ff, #eaff6a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+  }
+
+.rounded-square-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .rounded-square {
+    width: 300px;
+    height: 200px;
+    background-color: #ea90ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #ea90ff; /* color de fondo del texto */
+    color: white;
+  }
+  
+  .rounded-square h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #ea90ff; /* color de fondo del texto */
+    color: rgb(0, 0, 0);
+  }
+  
+  .rounded-square p {
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #ea90ff; /* color de fondo del texto */
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .rounded-square-green {
+    width: 300px;
+    height: 200px;
+    background-color: #eaff6a;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #eaff6a; /* color de fondo del texto */
+    color: white;
+  }
+  
+  .rounded-square-green h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #eaff6a; /* color de fondo del texto */
+    color: rgb(0, 0, 0);
+  }
+  
+  .rounded-square-green p {
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    background-color: #eaff6a; /* color de fondo del texto */
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .blog-index{
+      text-align: center;
+      margin-top: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .blog-index h2{
+    font-size: 30px;
+    text-shadow: 0 0 30px white;
+    background: linear-gradient(to right, #ea90ff, #eaff6a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .blog-index__p{
+      margin-top: 25px;
+  }
+
+  .blog-index__p p{
+    line-height: 22px;
+}
+
+.blog-index__a{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.blog-index a {
+    /* propiedades del elemento */
+    padding: 16px 30px 16px 30px;
+    box-shadow: 0 0 10px 10px #eaff6a; /* agrega un resplandor exterior en color #eaff6a */
+    background-color: #ea90ff;
+    border-radius: 10px;
+    animation: latido 3s linear infinite; /* agrega una animación de latido que dure 1 segundo y se repita de forma infinita */
+    font-size: 15pt;
+  }
+  
+  @keyframes latido {
+    0% { /* al inicio de la animación */
+      box-shadow: 0 0 8px 8px #eaff6a; /* establece el resplandor exterior en su tamaño original */
+    }
+    50% { /* a la mitad de la animación */
+      box-shadow: 0 0 14px 14px #eaff6a; /* agrega un poco más de tamaño al resplandor exterior */
+    }
+    100% { /* al final de la animación */
+      box-shadow: 0 0 8px 8px #eaff6a; /* vuelve al tamaño original del resplandor exterior */
+    }
+  }
+
+  input[type="text"] {
+    text-align: center;
+  }
+
+  canvas {
+    background-color: white;
+  }
+
+  /* AQUÍ EMPIEZA LAS DECLARACIONES PARA "NUEVO FPL" */
+
+.platform-comencemos{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.FplBlock{
+  margin-top: 30px;
+  height: 1500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  border: 5px solid #ea90ff;
+  border-radius: 10px;
+}
+
+.FplBlock p{
+  text-align: left;
+  font-size: 20px;
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.p-smaller{
+  font-size: 15px !important;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.FplBlock input[type="text"]{
+  border: 1px solid #eaff6a;
+  border-radius: 30px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.FplBlock select{
+  border: 1px solid #eaff6a;
+  border-radius: 30px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.FplBlock input[type="date"]{
+  border: 1px solid #eaff6a;
+  border-radius: 30px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Provicali;
+}
+
+.disclaimer {
+  text-align: center;
+  margin: 20px;
+}
