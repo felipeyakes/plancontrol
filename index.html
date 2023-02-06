@@ -10,20 +10,38 @@
 <body>
     <header>
         <img src="./img/logo.svg" alt="Logotipo Plan Control" class="logo">
+
+        <nav class="nav-desktop">
+          <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./pages/utilidades.html">Utilidades</a></li>
+              <li><a href="#">Formularios</a></li>
+              <li><a href="./pages/platform-fpl/platform-fpl.html" class="resplandorNewFpl">Nuevo FPL</a></li>
+          </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="gradient-text">Creá tu plan de vuelo, más simple que nunca.</div>
+        <div class="desktop-view-index">
+          <div class="gradient-text">Creá tu plan de vuelo, más simple que nunca.</div>
 
-        <div class="explanation">
-            <p>Con Plan Control, nunca había sido tan fácil crear tu plan de vuelo.</p>
+          <div class="explanation">
+              <p>Con Plan Control, nunca había sido tan fácil crear tu plan de vuelo.</p>
 
-            <p>Simplemente declará las variables del plan, lo demás lo hacemos nosotros.</p>
+              <p>Simplemente declará las variables del plan, lo demás lo hacemos nosotros.</p>
+
+              <p>¿Lo mejor de todo? 100% gratis.</p>
+          </div>
+        </div>
+
+        <div class="arrow-container">
+          <div class="arrow"></div>
         </div>
 
         <h2 class="gradient-h2">¿Qué puedo hacer con Plan Control?</h2>
 
-        <div class="rounded-square-container">
+        <div class="que-puedo-hacer-index">
+          <div class="rounded-square-container">
             <div class="rounded-square">
               <h3>Plan de vuelo</h3>
               <p>Completá tu plan de vuelo. Podés cargar tus matrículas, tus licencias, tus rutas más frecuentes y solo declarar la fecha y hora de despegue. Simple. Rápido.</p>
@@ -43,19 +61,20 @@
               <p>¿Estás por salir a volar con el plan de vuelo que presentaste? Consultá la información METAR, NOTAM, TAF, MAHDEL, etc según tu plan de vuelo presentado. ¿No sabés el teléfono del ARO/AIS? Nosotros lo tenemos. Todo esto y mucho más.</p>
             </div>
           </div>
+        </div>
 
         <section class="blog-index">
                 <div class="blog-index__a">
-                     <a href="#">Creá tu plan de vuelo</a>
+                  <a href="./pages/platform-fpl/platform-fpl.html">Creá tu plan de vuelo</a>
                 </div>
         </section>
 
 
-        <nav class="bottom-nav">
+        <nav class="nav-mobile">
             <ul>
                 <li><a href="#">Formularios</a></li>
                 <li><a href="./pages/platform-fpl/platform-fpl.html">Nuevo FPL</a></li>
-                <li><a href="#">Utilidades</a></li>
+                <li><a href="./pages/utilidades.html">Utilidades</a></li>
             </ul>
           </nav>
 
@@ -75,5 +94,8 @@
         </div>
         
     </footer>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

@@ -6,6 +6,11 @@
     text-decoration: none;
 }
 
+main{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 body {
     font-family: "Provicali", sans-serif;
   }
@@ -19,6 +24,8 @@ header{
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 footer{
@@ -45,7 +52,7 @@ footer ul{
     width: 250px;
 }
 
-.bottom-nav {
+.nav-mobile {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -55,7 +62,7 @@ footer ul{
 }
 
 
-.bottom-nav ul {
+.nav-mobile ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -63,16 +70,47 @@ footer ul{
   padding: 0;
 }
 
-.bottom-nav li {
+.nav-mobile li {
   flex: 1;
   text-align: center;
 }
 
-.bottom-nav a {
+.nav-mobile a {
   display: block;
   padding: 20px 0;
   color: rgb(255, 255, 255);
   text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-desktop a {
+  width: 100px; /* o el ancho que desees */
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #ebff6ac7;
+  border-radius: 10px;
+}
+
+.resplandorNewFpl{
+  box-shadow: 0 0 30px #ea90ff;
+}
+
+.nav-desktop ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  list-style: none;
+}
+
+.logo {
+  display: inline-block;
 }
 
 .gradient-text {
@@ -257,6 +295,36 @@ footer ul{
     background-color: white;
   }
 
+  .arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid rgb(255, 255, 255);
+    animation: arrow-down 6s ease-in-out infinite;
+  }
+  
+  @keyframes arrow-down {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   /* AQUÍ EMPIEZA LAS DECLARACIONES PARA "NUEVO FPL" */
 
 .platform-comencemos{
@@ -325,7 +393,7 @@ footer ul{
   margin-right: 15px;
 }
 
-.buttonApp{
+.buttonConfirmation{
   margin-top: 20px;
   margin-bottom: 20px;
   border: 1px solid #ea90ff;
@@ -365,12 +433,103 @@ footer ul{
 
 .disclaimer {
   text-align: center;
-  margin: 20px;
+  margin-top: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-@media screen and (min-width: 768px) {
+li a[href="./platform-fpl/platform-fpl.html"] {
+  color: red; /* o cualquier otro color */
+}
+
+.formulariosPageButton{
+  padding: 23px 30px 23px 30px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px 10px #eaff6a;
+  background-color: #ea90ff;
+  border-radius: 10px;
+  font-size: 15pt;
+  max-width: 190px;
+  display: block;
+  text-align: center;
+  }
+
+.stepNumber{ /* ESTO QUEDA TAMBIÉN CUANDO SE COLAPSA */
+  margin-top: 20px;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to right, #ea90ff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/* A PARTIR DE ACÁ SE MANEJA EL COLLAPSE Y DESCOLLAPSE.  */
+
+.buttonEdit{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ea90ff;
+  border-radius: 30px;
+  font-size: 15px;
+  width: 70px;
+  height: 50px;
+  font-family: Provicali;
+}
+
+/* manejo de aparicion y ocultamiento de información en cada paso */
+
+
+/* PASO 1 */
+
+#firstStepHidden{
+  display: none;
+}
+
+.firstStepPublic{
+  display: initial;
+}
+
+
+/* media querys */
+
+@media screen and (max-width:900px) {
+
+  /* configuracion de navs en mobile y pc */
+  .nav-desktop{
+    display: none;
+  }
+
+  .arrow, .arrow-container{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
   .gridContainer{
     display: grid;
-  grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* configuración de navs en mobile y pc */
+
+  .nav-mobile{
+    display: none;
+  }
+
+  .desktop-view-index{
+    margin-top: 200px;
+    margin-bottom: 110px;
+  }
+
+  .que-puedo-hacer-index{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    margin-top: 50px;
   }
 }
