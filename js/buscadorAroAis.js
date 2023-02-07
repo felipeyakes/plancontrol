@@ -7,24 +7,33 @@ const aroAisOffices = [
 ]
 
 const formulario = document.querySelector('#formulario');
-const boton = document.querySelector('#boton');
-const resultado = document.querySelector('#resultado')
+const resultado = document.querySelector('#resultados')
+resultado.innerHTML = `<p class="no-resultAroAis">Debes escribir como mínimo 3 caracteres para iniciar la búsqueda.</p>`;
 
-const filtrar = ()=>{
-    // console.log(formulario.value);
+
+const filtrar = () => {
     resultado.innerHTML = ``;
 
-    const texto = formulario.value.toLowerCase();
-    for(let aroAisOffice of aroAisOffices){
+    if (formulario.value.trim().length < 3) {
+    resultado.innerHTML = `<p class="no-resultAroAis">Debes escribir como mínimo 3 caracteres para iniciar la búsqueda.</p>`;
+    } else {
+        let contador = 0;
+        const texto = formulario.value.toLowerCase();
+        for (let aroAisOffice of aroAisOffices) {
         let aroAisOff = aroAisOffice.aroAisOff.toLowerCase();
-        if(aroAisOff.indexOf(texto) !== -1){
-            resultado.innerHTML += `<li>${aroAisOffice.aroAisOff}</li>`
-        }
+    if (aroAisOff.indexOf(texto) !== -1) {
+        contador++;
+        resultado.innerHTML += `<li>${aroAisOffice.aroAisOff}</li>`
+        resultado.innerHTML += `<p class="tel-aroAis">Teléfono: ${aroAisOffice.aroAisTelNumber}</p>`
+        resultado.innerHTML += `<p class="email-aroAis">Email: ${aroAisOffice.aroAisEmail}</p>`
+        resultado.innerHTML += `<p class="info-aroAis">Información: ${aroAisOffice.aroAisInfo}</p>`
     }
-    
-    if(resultado.innerHTML === ``){
-        resultado.innerHTML += `<li>Oficina ARO AIS no encontrada</li>`
+    }
+
+    if (contador === 0 && formulario.value.length >= 3) {
+    resultado.innerHTML = `<p class="no-resultAroAis">No se encontraron oficinas ARO/AIS.</p>`;
+    }
     }
 }
 
-boton.addEventListener('click', filtrar)
+formulario.addEventListener('input', filtrar);

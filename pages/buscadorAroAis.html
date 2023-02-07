@@ -28,14 +28,21 @@
 
         <!-- BUSCADOR DE OFICINAS ARO AIS -->
         <div class="container-aroAis">
-            <input type="text" id="formulario" placeholder="Buscar (Ej: SADM)">
-            <button id="boton">Buscar</button>
-            <ul id="resultados">
+            <div class="input-aroAis">
+                <input type="text" id="formulario" placeholder="Buscar (Ej: SADM)">
+            </div>
+
+            <ul class="ul-aroAis" id="resultados">
                 <li></li>
+                <div class="resultados-infoAroAis">
+                    <p class="tel-aroAis"></p>
+                    <p class="email-aroAis"></p>
+                    <p class="info-aroAis"></p>
+                </div>
             </ul>
         </div>
 
-        <p>La información aquí brindada puede NO estar actualizada o NO ser correcta.</p>
+        <p class="text-centeredAroAis">La información aquí brindada puede NO estar actualizada o NO ser correcta.</p>
 
         <nav class="nav-mobile">
             <ul>
@@ -50,10 +57,11 @@
 
     </footer>
 
-    <script src="../js/buscadorAroAis.js"></script>
-    <script src="../js/main.js"></script>
+        <!-- librerias -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <!-- librerias -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="../js/buscadorAroAis.js"></script>
+        <script src="../js/main.js"></script>
+        
 </body>
 </html>

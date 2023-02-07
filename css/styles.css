@@ -4,6 +4,7 @@
     background: rgb(0, 0, 0);
     color: white;
     text-decoration: none;
+    list-style: none;
 }
 
 main{
@@ -492,6 +493,69 @@ li a[href="./platform-fpl/platform-fpl.html"] {
 
 .firstStepPublic{
   display: initial;
+}
+
+/* BUSCADOR ARO AIS  */
+
+.container-aroAis{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.input-aroAis{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.input-aroAis input{
+  border: 1px solid #eaff6a;
+  border-radius: 30px;
+  width: 700px;
+  height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#resultados li{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(to right, #ea90ff, #eaff6a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+}
+
+.tel-aroAis, .email-aroAis, .info-aroAis{
+  text-align: center;
+}
+
+.ul-aroAis{
+  max-width: 500px;
+  width: auto;
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 0px;
+  text-align: center;
+  border: 5px solid #ea90ff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 white;
+  margin: 0 auto;
+}
+
+.no-resultAroAis{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.text-centeredAroAis{
+  text-align: center;
 }
 
 

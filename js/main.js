@@ -12,7 +12,7 @@ swalWithBootstrapButtons.fire({
     icon: 'warning',
     showCancelButton: true,
     confirmButtonText: 'No, quiero ver el tutorial',
-    cancelButtonText: '¿Cómo? ¡Yo ya se usar Plan Control!',
+    cancelButtonText: 'Sí, ya se utilizar Plan Control',
     reverseButtons: true
 }).then((result) => {
     if (result.isConfirmed) {
