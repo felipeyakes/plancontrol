@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+@font-face {
+  font-family: "Provicali";
+  src: url("/fonts/Provicali.otf") format("opentype");
+}
+
+
 *{
     margin: 0;
     padding: 0;
-    background: rgb(0, 0, 0);
+    background: rgb(37, 37, 37);
     color: white;
     text-decoration: none;
     list-style: none;
@@ -13,13 +21,8 @@ main{
 }
 
 body {
-    font-family: "Provicali", sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   }
-
-@font-face {
-    font-family: "Provicali";
-    src: url("/fonts/Provicali.otf") format("opentype");
-}
 
 header{
     margin-top: 30px;
@@ -43,6 +46,14 @@ footer img{
 
 footer ul{
     margin-top: 20px;
+}
+
+.info-footer{
+  margin-top: 20px;
+}
+
+.info-footer p{
+  margin-top: 10px;
 }
 
 .copy-footer{
@@ -78,10 +89,17 @@ footer ul{
 
 .nav-mobile a {
   display: block;
-  padding: 20px 0;
+  padding: 12px 0;
+  padding-right: 20px;
+  padding-left: 20px;
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 20px;
+}
+
+.centered-icon{
+  text-align: center;
+  padding-top: 20px;
 }
 
 .nav-desktop {
@@ -94,8 +112,8 @@ footer ul{
   padding: 10px;
   display: flex;
   justify-content: space-around;
-
-  background-color: #ebff6ac7;
+  color: black ;
+  background-color: #ffffffe1;
   border-radius: 10px;
 }
 
@@ -123,6 +141,7 @@ footer ul{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 40px;
+    font-family: "Provicali", sans-serif;
 }
 
 .gradient-text-platform{
@@ -134,7 +153,9 @@ footer ul{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 40px;
+  font-family: "Provicali";
 }
+
 
 .explanation{
     margin-top: 0px;
@@ -162,80 +183,41 @@ footer ul{
     margin-bottom: 25px;
   }
 
-.rounded-square-container {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .rounded-square {
-    width: 300px;
-    height: 200px;
-    background-color: #ea90ff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    background-color: #ea90ff; /* color de fondo del texto */
-    color: white;
-  }
-  
-  .rounded-square h3 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #ea90ff; /* color de fondo del texto */
-    color: rgb(0, 0, 0);
-  }
-  
-  .rounded-square p {
-    margin: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 14px;
-    background-color: #ea90ff; /* color de fondo del texto */
-    color: rgb(0, 0, 0);
-    text-align: center;
-  }
-  
-  .rounded-square-green {
-    width: 300px;
-    height: 200px;
-    background-color: #eaff6a;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    background-color: #eaff6a; /* color de fondo del texto */
-    color: white;
-  }
-  
-  .rounded-square-green h3 {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #eaff6a; /* color de fondo del texto */
-    color: rgb(0, 0, 0);
-  }
-  
-  .rounded-square-green p {
-    margin: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 14px;
-    background-color: #eaff6a; /* color de fondo del texto */
-    color: rgb(0, 0, 0);
-    text-align: center;
-  }
+.explanation-title{
+  font-family: Provicali;
+  font-size: 40px;
+}
+.explanation-insider{
+  padding-left: 30px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+}
+.explanation-insider p{
+  margin-top: 15px;
+}
+
+.explanation-index{
+  margin: 40px;
+  padding-bottom: 40px;
+}
+
+.centeredBig-p{
+  text-align: center;
+  font-family: Provicali;
+  font-size: 50px;
+  text-shadow: 0 0 30px white;
+  background: linear-gradient(to right, #ea90ff, #eaff6a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.centeredSmall-p{
+  text-align: center;
+  padding-bottom: 40px;
+}
 
   .blog-index{
       text-align: center;
@@ -334,7 +316,7 @@ footer ul{
   font-size: 30px;
 }
 
-.FplBlock{
+.FplBlock {
   margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
@@ -342,6 +324,7 @@ footer ul{
   border: 5px solid #ea90ff;
   border-radius: 10px;
   box-shadow: 0 0 20px 0 white;
+  min-height: 200px;
 }
 
 .FplBlock p{
@@ -439,9 +422,6 @@ footer ul{
   margin-right: 200px;
 }
 
-li a[href="./platform-fpl/platform-fpl.html"] {
-  color: red; /* o cualquier otro color */
-}
 
 .formulariosPageButton{
   padding: 23px 30px 23px 30px;
@@ -480,6 +460,15 @@ li a[href="./platform-fpl/platform-fpl.html"] {
   width: 70px;
   height: 50px;
   font-family: Provicali;
+}
+
+.confirmedData{
+  width: 200px;
+}
+
+.iconConfirmated{
+  display: block;
+  margin-top: 20px;
 }
 
 /* manejo de aparicion y ocultamiento de información en cada paso */
@@ -530,6 +519,7 @@ li a[href="./platform-fpl/platform-fpl.html"] {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 20px;
+  font-family: "Provicali";
 }
 
 .tel-aroAis, .email-aroAis, .info-aroAis{
@@ -571,6 +561,28 @@ li a[href="./platform-fpl/platform-fpl.html"] {
   .arrow, .arrow-container{
     display: none;
   }
+
+  .copy-footer{
+    margin-bottom: 100px;
+  }
+
+  .explanation-index{
+    margin: 20px;
+  }
+
+  .disclaimer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .confirmedData{
+    width: auto;
+  }
+
+  .confirmedData p{
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 900px) {
@@ -590,10 +602,4 @@ li a[href="./platform-fpl/platform-fpl.html"] {
     margin-bottom: 110px;
   }
 
-  .que-puedo-hacer-index{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 50px;
-    margin-top: 50px;
-  }
 }

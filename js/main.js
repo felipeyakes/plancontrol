@@ -15,7 +15,7 @@ if (!localStorage.getItem("visited")) {
     cancelButtonText: 'Ya sé utilizarla. Continuar a Plan Control.'
     }).then((result) => {
     if (result.isConfirmed) {
-    window.open("https://www.google.com", "_blank"); //acá iría el link a un pdf con un tutorial que muestra como utilizar la plataforma.
+    window.open("../recursos/instructivo-plancontrol.pdf", "_blank"); //acá iría el link a un pdf con un tutorial que muestra como utilizar la plataforma.
     }
     });
     }

@@ -18,14 +18,14 @@ const aroAisOffices = [
 
 const formulario = document.querySelector('#formulario');
 const resultado = document.querySelector('#resultados')
-resultado.innerHTML = `<p class="no-resultAroAis">Debes escribir como mínimo 3 caracteres para iniciar la búsqueda.</p>`;
+resultado.innerHTML = `<p class="no-resultAroAis">Debés escribir como mínimo 3 caracteres para iniciar la búsqueda.</p>`;
 
 
 const filtrar = () => {
     resultado.innerHTML = ``;
 
     if (formulario.value.trim().length < 3) {
-    resultado.innerHTML = `<p class="no-resultAroAis">Debes escribir como mínimo 3 caracteres para iniciar la búsqueda.</p>`;
+    resultado.innerHTML = `<p class="no-resultAroAis">Debés escribir como mínimo 3 caracteres para iniciar la búsqueda.</p>`;
     } else {
         let contador = 0;
         const texto = formulario.value.toLowerCase();
